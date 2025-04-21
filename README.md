@@ -39,14 +39,10 @@ Projeto em `Python` para resolver o problema de sequenciamento de ordens de prod
   jupyter notebook Projeto_Seq_Prod.ipynb
   ```
 - **Visualização estática**: abra `Projeto_Seq_Prod.html` no navegador para ver o relatório gerado.
-- **Script (opcional)**:  
-  ```bash
-  python main.py --input production_df.xlsx --output resultados.csv
-  ```
+
 
 ## Próximos Passos
 - Implementar meta‑heurísticas (Simulated Annealing, algoritmos genéticos) para escalabilidade em cenários de produção.  
-- Adicionar testes automatizados, integração contínua e benchmarks de desempenho.
 
 ---
 
