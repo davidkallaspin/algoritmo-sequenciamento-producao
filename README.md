@@ -1,19 +1,17 @@
 # Algoritmo de Sequenciamento de Produção
 
 **Descrição**  
-Projeto em Python para resolver o problema de sequenciamento de ordens de produção, minimizando tempos de setup, atrasos e priorização de pedidos.
+Projeto em Python para resolver o problema de sequenciamento de ordens de produção, minimizando tempos de setup, atrasos e considerando a priorização de ordens específicas.
 
-## Funcionalidades
+## Detalhes
 - **Leitura e pré‑processamento de dados**: importa automaticamente planilha Excel com tempos de setup, datas de necessidade e pesos de prioridade.
 - **Geração exaustiva de sequências**: cria todas as permutações possíveis de ordens (complexidade `n!`), garantindo análise completa.
 - **Cálculo de função de fitness multi‑critério**: combina minimização de tempo de setup, atrasos e priorização de ordens em uma métrica única.
 - **Normalização de métricas pelo pior caso**: padroniza valores heterogêneos (tempo, atraso, prioridade) usando o pior cenário como referência.
 - **Visualização de resultados**:
-  - Gráficos estáticos com `matplotlib`, destacando a melhor sequência;
-  - Dashboards interativos com `Altair`, permitindo explorar diferentes combinações de pesos.
-- **Destacamento automático da melhor solução**: identifica e anota a permutação mais eficiente para fácil extração de insights.
+  - Gráficos com `matplotlib` e `Altair`, destacando a melhor sequência;
+- **Destacamento automático da melhor solução**: identifica e anota a permutação mais eficiente para extração de insights.
 - **Configuração flexível de parâmetros**: ajusta pesos relativos, tolerâncias de atraso e thresholds de setup diretamente no notebook ou via linha de comando.
-- **Exportação de relatórios**: gera CSVs com as top‑k melhores sequências e métricas de desempenho.
 
 ## Estrutura do Projeto
 - `sequenciamento.ipynb`: notebook principal com importação de dados, cálculo de fitness e visualizações.
