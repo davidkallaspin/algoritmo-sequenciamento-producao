@@ -1,7 +1,7 @@
 # Algoritmo de Sequenciamento de Produção
 
 **Descrição**  
-Projeto em Python para resolver o problema de sequenciamento de ordens de produção, minimizando tempos de setup, atrasos e considerando a priorização de ordens específicas.
+Projeto em `Python` para resolver o problema de sequenciamento de ordens de produção, minimizando tempos de setup, atrasos e considerando a priorização de ordens específicas.
 
 ## Detalhes
 - **Leitura e pré‑processamento de dados**: importa automaticamente planilha Excel com tempos de setup, datas de necessidade e pesos de prioridade.
