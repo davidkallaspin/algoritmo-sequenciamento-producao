@@ -14,12 +14,40 @@ Projeto em `Python` para resolver o problema de sequenciamento de ordens de prod
 - **Configuração flexível de parâmetros**: ajusta pesos relativos, tolerâncias de atraso e thresholds de setup diretamente no notebook ou via linha de comando.
 
 ## Estrutura do Projeto
-- `sequenciamento.ipynb`: notebook principal com importação de dados, cálculo de fitness e visualizações.
-- `utils.py`: funções auxiliares para leitura de dados, geração de permutações e cálculo de métricas.
+- `Projeto_Seq_Prod.ipynb`: notebook principal com importação de dados, cálculo de fitness e visualizações.
+- `Projeto_Seq_Prod.html`: exportação estática do notebook para visualização offline.
 - `production_df.xlsx`: planilha de entrada com tempos de setup, prazos e prioridades.
-- `.gitignore`: padrões de arquivos ignorados pelo Git.
 
 ## Instalação
-1. Clone este repositório:
+1. **Clone** este repositório:  
    ```bash
    git clone git@github.com:davidkallaspin/algoritmo-sequenciamento-producao.git
+   ```
+2. **Crie e ative** um ambiente virtual (macOS/Linux):  
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
+3. **Instale** as dependências:  
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Uso
+- **Notebook**: execute  
+  ```bash
+  jupyter notebook Projeto_Seq_Prod.ipynb
+  ```
+- **Visualização estática**: abra `Projeto_Seq_Prod.html` no navegador para ver o relatório gerado.
+- **Script (opcional)**:  
+  ```bash
+  python main.py --input production_df.xlsx --output resultados.csv
+  ```
+
+## Próximos Passos
+- Implementar meta‑heurísticas (Simulated Annealing, algoritmos genéticos) para escalabilidade em cenários de produção.  
+- Adicionar testes automatizados, integração contínua e benchmarks de desempenho.
+
+---
+
+*© David Kallás Pinto*
